@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>Alberto Benavides</title>
+    <style>
+
+      html {
+        border: 1px solid transparent;
+      }
+
+      body {
+        border: 1px solid transparent;
+        padding: 45px 0 20px 0;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .parallax span {
+        position: absolute;
+        top: -45px;
+      }
+
+      .parallax > div {
+        position: relative;
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        float: left;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+      }
+    
+      .content_container {
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color:black;
+        z-index:0;
+        opacity:0.5;
+        text-shadow: 3px 3px 0px #000;
+        color: white;
+        border: 1px solid transparent;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100%;
+      }
+
+      #origins_div {
+        background-image: url(/images/mexico_bg.jpg)
+      }
+
+      #sports_div {
+        background-image: url(/images/sports_bg.jpg);
+      }
+
+      #college_div {
+        background-image: url(/images/stanford_bg.jpg);
+      }
+      
+      #nyc_div {
+        background-image: url(/images/manhattan_bg.jpg);
+      }
+
+      #interests_div {
+        background-image: url(/images/numbers_bg.jpg);
+      }
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            Alberto Benavides
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#college">College</a></li>
+        <li><a href="#nyc">NYC</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="parallax">
+    <div id="origins_div">
+      <span id="origins"></span>
+      <div class="content_container"> {{{ origins }}} </div>
+    </div>
+    <div id="sports_div">
+      <span id="sports"></span>
+      <div class="content_container"> {{{ sports }}} </div>
+    </div>
+    <div id="college_div">
+      <span id="college"></span>
+      <div class="content_container"> {{{ college }}} </div>
+    </div>
+    <div id="nyc_div">
+      <span id="nyc"></span>
+      <div class="content_container"> {{{ nyc }}} </div>
+    </div>
+    <div id="interests_div">
+      <span id="interests"></span>
+      <div class="content_container"> {{{ interests }}} </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
